@@ -19,3 +19,27 @@ function main() {
 
 // let's get this party started
 main();
+
+
+// Author: Alexander Chen <achen197@ucsc.edu>
+// Created: April 25 2024
+// License: Public Domain
+
+
+// Defined Variables
+make = "Honda";
+model = "Civic";
+color = "Blue";
+year = 2022;
+
+
+// Calculating
+age = 2024 - year;
+
+
+// The Outputs
+document.writeln("Make: " + make + "<br>");
+document.writeln("Model: " + model + "<br>");
+document.writeln("Color: " + color + "<br>");
+document.writeln("Year: " + year + "<br>");
+document.writeln("Age: " + age + " years<br>");
