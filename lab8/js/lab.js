@@ -1,34 +1,25 @@
-// index.js - purpose and description here
-// Author: Alexander Chen (achen197@ucsc.edu)
-// Date: April 29th
+/*
+* Author: Alexander Chen <achen197@ucsc.edu>
+* Created: May 6th
+* License: Public Domain
+*/
 
-// Constants
+let numbersArray = [7, 9, 15, -8, 900, 3000, 65];
 
-// Functions
-myTransport = ["Honda Civic", "Bike", "Train", "Bus"];
-
-myMainRide = {
-  make: "Honda",
-  model: "Civic",
-  color: "Blue",
-  year: 2022,
-  age: function() {
-    return 2024 - this.year;
-  }
-}
-document.writeln("Transportation I Use: ", myTransport, "</br>");
-document.writeln("My Main Ride: <pre>",
-JSON.stringify(myMainRide, null, '\t'), "</pre");
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function Multiplication(x) {
+  let result = x * 2;
+  return result;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+//Testing Function//
+console.log(Multiplication(9));
+console.log(Multiplication(-8));
 
-// let's get this party started
-main();
+let mapResults1 = numbersArray.map(Multiplication);
+console.log("Results 1:", mapResults1);
+
+let mapResults2 = numbersArray.map(function(x) {
+  let result = x * x;
+  return result;
+});
+console.log("Results 2:", mapResults2);
