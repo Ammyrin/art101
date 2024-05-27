@@ -18,4 +18,4 @@ $(document).ready(function() {
     $('#output').html(oneLongString);
   }
   fizzBuzz();
-})
+});
