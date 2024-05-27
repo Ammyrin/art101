@@ -17,7 +17,7 @@ function sortingHat(str) {
   }
 }
 
-document.getElementById('button').addEventListener('click',function() {
+document.getElementById('button').addEventListener('click', function() {
   let name = document.getElementById('input').value;
   let house = sortingHat(name);
   let newParagraph = document.createElement('p');
